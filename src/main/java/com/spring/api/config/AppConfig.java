@@ -1,7 +1,5 @@
 package com.spring.api.config;
 
-import com.spring.api.DAO.StudentServicesDAO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,8 +14,8 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
 public class AppConfig {
-    @Autowired
-    private StudentServicesDAO studentServicesDAO;
+//    @Autowired
+//    private StudentServicesDAO studentServicesDAO;
     @Bean
     public UserDetailsService userDetailsService(){
         UserDetails UserDetailsVariable = User.builder().username("Dip")
